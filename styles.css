@@ -1,0 +1,53 @@
+body {
+    font-family: 'NeueDisplay-Random';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.all_wrap {
+  height: 100%; 
+  width: 100%; 
+  position: relative;}
+
+.content {
+  position: absolute; 
+  width: 100%; 
+  text-align: center; 
+  left: 0; 
+  top: 40%; 
+}
+
+.content h1 {
+  font-size: 17px; 
+  margin-bottom: 25px; 
+  box-sizing: border-box; 
+  padding: 0 20px;
+}
+
+.content>div {
+  position: relative;
+}
+
+.content p {
+  font-size: 32px; 
+  color: #ed1c23; 
+  position: relative; 
+  max-width: 320px; 
+  margin: 0 auto; 
+  transition: all 0.2s;
+}
+
+.content p::after {
+  content: "HAPPY HOLIDAYS"; 
+  display: block; 
+  background: white; 
+  position: absolute; 
+  left: 50%; 
+  top: 0; 
+  text-align: center; 
+  width: 320px; 
+  opacity:0; 
+  transform: translateX(-50%); 
+}
+
+.content p:hover::after , .content p:hover+.line{opacity: 1;}
